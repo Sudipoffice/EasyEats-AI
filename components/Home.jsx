@@ -33,7 +33,7 @@ const Home = () => {
         </h1> 
 
     </div>
-    {/* <RandomRecipes/> */}
+    <RandomRecipes/>
 
     </div>
   );
