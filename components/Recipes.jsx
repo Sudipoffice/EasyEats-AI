@@ -8,9 +8,9 @@ const Recipes = () => {
     const [recipes, setRecipes] = useState([]);
     const [cuisines, setCuisines] = useState("All")
     const [searchFood, setSearchFood] = useState("")
-  const apiKey2 = process.env.REACT_APP_API_KEY2;
-  const apiKey3 = process.env.REACT_APP_API_KEY3;
-  const apiKey4 = process.env.REACT_APP_API_KEY4;
+  const apiKey2 = import.meta.env.VITE_API_KEY2;
+  const apiKey3 = import.meta.env.VITE_API_KEY3;
+  const apiKey4 = import.meta.env.VITE_API_KEY4;
  
   useEffect(() => {
     const FetchRecipes = async () =>{

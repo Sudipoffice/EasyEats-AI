@@ -11,7 +11,7 @@ const AIChef = () => {
   const [answer, setAnswer] = useState("");
   const [ingredientInput, setIngredientInput] = useState("");
   // const [ingredientSuggestion, setIngredientSuggestion] = useState([]);`
-  const aiApiKey = process.env.REACT_APP_API_KEY1;
+  const aiApiKey = import.meta.env.VITE_AI_KEY1;
   const [isEgVisible, setIsEgVisible] = useState(true);
 
 

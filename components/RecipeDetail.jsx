@@ -6,7 +6,7 @@ import RecipeDetailShimmer from "./RecipeDetailShimmer";
 const RecipeDetail = () => {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
-  const apiKey5 = process.env.REACT_APP_API_KEY5;
+  const apiKey5 = import.meta.env.VITE_API_KEY5;
 
   useEffect(() => {
     const fetchRecipeDetail = async () => {

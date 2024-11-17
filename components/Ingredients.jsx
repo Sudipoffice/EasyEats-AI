@@ -8,10 +8,10 @@ const Ingredients = () => {
   const [recipes, setRecipes] = useState([]);
   const [searchIngredient, setSearchIngredient] = useState("");
   const [trendingSearch, setTrendingSearch] = useState("")
-  const apiKey5 = process.env.REACT_APP_API_KEY5;
+  const apiKey5 = import.meta.env.VITE_API_KEY5;
 
   const [randomRecipes, setRandomRecipes] = useState([])
-    const apiKey4 = process.env.REACT_APP_API_KEY4
+    const apiKey4 = import.meta.env.VITE_API_KEY4
     
     useEffect(()=>{
         const fetchRandomRecipes = async () =>{

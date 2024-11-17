@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const RandomRecipes = () => {
     const [recipes, setRecipes] = useState([])
-    const apiKey2 = process.env.REACT_APP_API_KEY2
+    const apiKey2 = import.meta.env.VITE_API_KEY2
     
     useEffect(()=>{
         const fetchRandomRecipes = async () =>{
