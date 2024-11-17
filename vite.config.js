@@ -12,6 +12,9 @@ export default defineConfig(({ mode }) => {
       'process.env.REACT_APP_API_KEY4': JSON.stringify(env.REACT_APP_API_KEY4),
       'process.env.REACT_APP_API_KEY5': JSON.stringify(env.REACT_APP_API_KEY5)
     },
+    build: {
+    outDir: 'dist',
+  },
     plugins: [react()],
   }
 })
