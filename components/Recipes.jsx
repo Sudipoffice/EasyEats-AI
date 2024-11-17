@@ -25,31 +25,31 @@ const Recipes = () => {
     FetchRecipes()
   }, [apiKey2])
 
-    // useEffect(() => {
-    //   const FetchRecipes = async () =>{
-    //     try{
-    //         const response = await axios.get(` https://api.spoonacular.com/recipes/random?number=100&veryPopular=true&apiKey=${apiKey3}`)
-    //         setRecipes(prevData => [...prevData, ...response.data.recipes])
-    //     }
-    //     catch(error){
-    //         console.log("error:",error)
-    //     }
-    //   }
-    //   FetchRecipes()
-    // }, [apiKey3])
+    useEffect(() => {
+      const FetchRecipes = async () =>{
+        try{
+            const response = await axios.get(` https://api.spoonacular.com/recipes/random?number=100&veryPopular=true&apiKey=${apiKey3}`)
+            setRecipes(prevData => [...prevData, ...response.data.recipes])
+        }
+        catch(error){
+            console.log("error:",error)
+        }
+      }
+      FetchRecipes()
+    }, [apiKey3])
 
-    // useEffect(() => {
-    //   const FetchRecipes = async () =>{
-    //     try{
-    //         const response = await axios.get(` https://api.spoonacular.com/recipes/random?number=100&veryPopular=true&apiKey=${apiKey4}`)
-    //         setRecipes(prevData => [...prevData, ...response.data.recipes])
-    //     }
-    //     catch(error){
-    //         console.log("error:",error)
-    //     }
-    //   }
-    //   FetchRecipes()
-    // }, [apiKey4])
+    useEffect(() => {
+      const FetchRecipes = async () =>{
+        try{
+            const response = await axios.get(` https://api.spoonacular.com/recipes/random?number=100&veryPopular=true&apiKey=${apiKey4}`)
+            setRecipes(prevData => [...prevData, ...response.data.recipes])
+        }
+        catch(error){
+            console.log("error:",error)
+        }
+      }
+      FetchRecipes()
+    }, [apiKey4])
 
 
 
@@ -64,7 +64,7 @@ const Recipes = () => {
 
   return (
     recipes.length==0 ? <RecipesShimmer/> :
-    <div className='pt-16 sm:pt-24 text-red-600 bg-orange-50' >
+    <div className='pt-16 sm:pt-24 text-red-600 bg-orange-50 min-h-screen' >
       <h1 className='font-lexend text-xl sm:text-3xl uppercase flex justify-center font-bold ' style={{ fontFamily: '"Cookie", sans-serif' }}> Explore Recipes...</h1>
       <div className='py-4 sm:py-8 px-2 sm:px-20 flex flex-row justify-evenly items-center w-screen'>
       {/* Search&SortBar */}

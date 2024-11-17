@@ -7,11 +7,11 @@ const RecipesShimmer = () => {
       <div className='py-4 sm:py-8 px-2 sm:px-20 flex flex-row justify-evenly items-center w-screen'>
       {/* Search&SortBar */}
       <div className='w-1/2 '>
-      <input className=' border-[0.5px] border-gray-700 w-4/6   p-1 sm:p-2 outline-none text-xs sm:text-lg ' placeholder='Search Recipes'></input> 
+      <input className=' border-[0.5px] border-gray-700 w-4/6  p-2 outline-none text-xs sm:text-lg ' placeholder='Search Recipes'></input> 
       <button className='text-gray-100 bg-red-600 p-1.5 sm:p-2 text-sm sm:text-lg  border-[0.5px] border-red-600'>Search</button>
       </div>
       <div className='w-1/3 sm:w-1/2 justify-end flex'>
-      <select name="cuisines" id="cuisines" className='outline-none  w-3/4  sm:w-fit border-[1px] border-red-600 p-1 sm:p-[9px] '>
+      <select name="cuisines" id="cuisines" className='outline-none  w-3/4  sm:w-fit border-[1px] border-red-600 text-sm sm:text-lg p-1 sm:p-[9px] '>
       <option value="select" disabled>Select Cuisines</option>
         <option value="All">All</option>
         <option value="Indian">Indian</option>
