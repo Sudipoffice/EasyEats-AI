@@ -52,7 +52,7 @@ const RandomRecipes = () => {
               : null
           ))}
         </div>
-      </div> : <div className='text-xl sm:text-5xl min-h-20 sm:min-h-40 flex justify-center items-center text-red-500 z-10' style={{fontFamily: '"Cookie", sans-serif'}}>Loading Trending recipes...</div>
+      </div> : <div className='text-2xl sm:text-5xl min-h-20 sm:min-h-40 flex justify-center items-center text-red-500 z-10' style={{fontFamily: '"Cookie", sans-serif'}}>Loading Trending recipes...</div>
   )
 }
 
