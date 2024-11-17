@@ -30,14 +30,14 @@ const RecipesShimmer = () => {
       {
         Array.from({length:12}).map((_,i) => {
             return <div className='flex flex-col w-full  items-center my-1 sm:my-8'> 
-            <span className='bg-red-200 w-5/6 my-2  aspect-[3/2]'></span>
+            <span className='bg-orange-100 w-5/6 my-2  aspect-[3/2]'></span>
             <div className='flex flex-col items-start w-3/4'>
 
-            <h2 className='bg-red-200 w-3/4 h-4 sm:h-8 my-1 sm:my-2'></h2>
-            <p className='bg-red-200 w-2/5 h-3 sm:h-6 my-1 sm:my-2'></p>
+            <h2 className='bg-orange-100 w-3/4 h-4 sm:h-8 my-1 sm:my-2'></h2>
+            <p className='bg-orange-100 w-2/5 h-3 sm:h-6 my-1 sm:my-2'></p>
             <span className='grid grid-cols-2 gap-2 justify-items-start w-3/5 sm:w-2/5 my-2'>
                 {Array.from({length:2}).map((_,i) => {
-                    return <div className='bg-red-200 w-full h-4 sm:h-8 rounded-3xl'></div>
+                    return <div className='bg-orange-100 w-full h-4 sm:h-8 rounded-3xl'></div>
                 })}
             </span>
             </div>
