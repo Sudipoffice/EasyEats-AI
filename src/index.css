@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@fontsource/kumar-one-outline";
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+  }
+  @layer base {
+    .font-outline-2 {
+      -webkit-text-stroke: 1.5px pink;
+    }
+    .font-outline-4 {
+      -webkit-text-stroke: 4px white;
+    }
+  }
+
+  .hero{
+    background-color: linear-gradient(319.6deg, rgb(243, 0, 0) 20.5%, rgb(255, 236, 68) 110.9%);
+  }
