@@ -12,7 +12,7 @@ const Home = () => {
     <div className=" flex flex-col sm:flex-row w-screen h-fit ">
 
     <div className='w-4/5 sm:w-1/3 z-10 pl-4 sm:pl-20 '>
-          <h1 className='text-red-400 pt-24 font-bold text-5xl sm:text-8xl font-lexend '>Make delicious <b>FOOD</b> right at the comfort of your <b>HOME</b><i className="bi bi-house-heart"></i></h1>
+          <h1 className='text-red-400 pt-24 font-bold text-5xl sm:text-8xl font-lexend select-none'>Make delicious <b>FOOD</b> right at the comfort of your <b>HOME</b><i className="bi bi-house-heart"></i></h1>
     </div>
             
     <div className='hidden sm:block w-3/4 h-screen z-10'>
@@ -28,7 +28,7 @@ const Home = () => {
         
 
 
-        <h1 className=" absolute bottom-80 -right-52  text-orange-50 text-[12em]  font-extrabold font-outline-2  uppercase font-lexend rotate-90 z-0">
+        <h1 className=" absolute bottom-80 -right-52  text-orange-50 text-[12em]  font-extrabold font-outline-2  uppercase font-lexend rotate-90 z-0 select-none">
           Recipes
         </h1> 
 

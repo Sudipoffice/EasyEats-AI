@@ -19,7 +19,8 @@ const RandomRecipes = () => {
         fetchRandomRecipes()
     },[apiKey2])
   return (
-    <div className="pt-32 sm:pt-20 font-lexend bg-orange-50">
+    !recipes.length>0?
+    <div className="pt-32 sm:pt-20 font-lexend bg-orange-50 min-h-screen z-10">
         <header className="flex justify-center items-center text-xl sm:text-5xl text-red-600 font-bold uppercase" style={{fontFamily: '"Cookie", sans-serif'}}>
           {" "}
           Top Trending Recipes{" "}
@@ -51,7 +52,7 @@ const RandomRecipes = () => {
               : null
           ))}
         </div>
-      </div>
+      </div> : <div className='text-xl sm:text-5xl min-h-20 sm:min-h-40 flex justify-center items-center text-red-500 z-10' style={{fontFamily: '"Cookie", sans-serif'}}>Loading Trending recipes...</div>
   )
 }
 
