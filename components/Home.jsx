@@ -12,7 +12,7 @@ const Home = () => {
   <div className="relative flex flex-col md:flex-row w-screen h-fit overflow-hidden ">
   
     <div className='relative w-4/5 md:w-1/3 z-20 pl-2 sm:pl-20 '>
-      <h1 className='text-red-400 pt-8 sm:pt-24 font-bold text-5xl md:text-8xl font-lexend select-none'>
+      <h1 className='text-red-400 pt-8 sm:pt-24 font-bold  text-2xl sm:text-5xl md:text-8xl font-lexend select-none'>
         Make delicious <b>FOOD</b> right at the comfort of your <b>HOME</b>
         <i className="bi bi-house-heart"></i>
       </h1>
