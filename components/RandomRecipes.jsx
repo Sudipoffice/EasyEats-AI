@@ -20,8 +20,8 @@ const RandomRecipes = () => {
     },[apiKey2])
   return (
     recipes.length>0?
-    <div className="pt-32 sm:pt-20 font-lexend bg-orange-50 min-h-screen z-10">
-        <header className="flex justify-center items-center text-xl sm:text-5xl text-red-600 font-bold uppercase" style={{fontFamily: '"Cookie", sans-serif'}}>
+    <div className="pt-0 sm:pt-20 font-lexend bg-orange-50 min-h-screen z-10">
+        <header className="flex justify-center items-center text-2xl sm:text-5xl text-red-600 font-bold uppercase" style={{fontFamily: '"Cookie", sans-serif'}}>
           {" "}
           Top Trending Recipes{" "}
         </header>

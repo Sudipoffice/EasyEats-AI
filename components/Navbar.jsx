@@ -6,8 +6,8 @@ const Navbar = () => {
     
   return (
   
-    <div className='w-screen h-16 sm:h-24 px-4 sm:px-0  fixed  bg-[#ffffff65] sm:bg-orange-50 flex flex-row  justify-end sm:justify-center items-center  z-20 text-red-600'>
-    <img className='w-12 sm:w-28 h-10 sm:h-24 absolute left-2 sm:left-12' src={navlogo} alt=""/>
+    <div className='w-screen h-16 sm:h-24 px-4 sm:px-0  fixed  bg-[#ffffff65] sm:bg-orange-50 flex flex-row  justify-end sm:justify-center items-center  z-40 text-red-600'>
+    <img className='w-12 sm:w-16 md:w-28 h-10 sm:h-12 md:h-24 absolute left-2 sm:left-12' src={navlogo} alt=""/>
     <nav className='flex flex-row justify-end sm:justify-center uppercase gap-2 text-xs sm:text-lg'>
        <NavLink className={({isActive}) =>` font-lexend ${isActive ? ' font-bold' : ''} mx-1 sm:mx-2 md:mx-6`}
  to="/">HOME</NavLink>
